@@ -1,0 +1,6 @@
+function escapeSpecialCharacters(id) {
+    return id.replace(/[!#$%&'()*+,./:;<=>?@[\]^`{|}~]/g, '\\$&');
+}
+
+// Escaped ID
+var escapedId = escapeSpecialCharacters(originalId);
